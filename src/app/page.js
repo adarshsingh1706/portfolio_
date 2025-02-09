@@ -3,11 +3,12 @@ import Image from "next/image";
 import profilePic from "../../public/profile2.jpg"; // Ensure the image is inside the `public` folder
 import {ProjectCarousel} from "@/components/ProjectCarousel";
 import { CoverDemo } from "@/components/ProjectHead";
+import ExpandableCardDemo from "@/components/expandable-card-demo-standard";
 
 export default function Home() {
   return (
     <>
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden bg-black">
       <BackgroundBeamsWithCollision />
       <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-center text-white px-6">
         
@@ -41,6 +42,8 @@ export default function Home() {
     <div className="mt-10 w-full flex justify-center">
           <ProjectCarousel />
         </div>
+
+        <ExpandableCardDemo />
     </>
   );
 }
