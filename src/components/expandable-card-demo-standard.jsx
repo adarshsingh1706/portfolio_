@@ -224,7 +224,7 @@ const cards = [
   {
     description: "Sam Altman",
     title: "AI Safety",
-    src: "/sama.jpg",
+    src: "/Sama.jpg",
     ctaText: "read",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -244,7 +244,7 @@ const cards = [
   {
     description: "Jeff Bezos",
     title: "AI & Society",
-    src: "/jeff.jpg",
+    src: "/Jeff.jpg",
     ctaText: "read",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
