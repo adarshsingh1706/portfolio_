@@ -32,7 +32,8 @@ export function SkillsSection() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto py-10 relative z-10">
+    <div className="max-w-7xl py-10 relative z-10 mx-16">
+
       <h2 className="text-white text-center text-4xl sm:text-5xl font-bold tracking-wide animate-fade-up mb-10">
         My Tech Stack
       </h2>

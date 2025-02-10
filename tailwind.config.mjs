@@ -17,7 +17,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        background: "hsl(var(--background, 220, 10%, 10%))", // Default dark bg
+        background: "hsl(var(--background, 220, 10%, 10%))",
         foreground: "hsl(var(--foreground, 0, 0%, 100%))",
         card: {
           DEFAULT: "hsl(var(--card, 220, 10%, 15%))",
@@ -56,6 +56,16 @@ module.exports = {
           "3": "hsl(var(--chart-3, 45, 90%, 50%))",
           "4": "hsl(var(--chart-4, 340, 80%, 50%))",
           "5": "hsl(var(--chart-5, 30, 80%, 50%))",
+        },
+      },
+      animation: {
+        scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
         },
       },
     },
