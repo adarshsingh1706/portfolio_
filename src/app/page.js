@@ -6,6 +6,11 @@ import ExpandableCardDemo from "@/components/expandable-card-demo-standard";
 import { SkillsSection } from "@/components/skills";
 import { FlipWords } from "@/components/ui/flip-words";
 import { FloatingDockDemo } from "@/components/TopTab";
+import { TechArticlesGrid } from "@/components/Articles";
+
+
+
+
 
 const words = ["scalable", "intuitive", "cutting-edge", "AI-driven"];
 
@@ -52,14 +57,25 @@ export default function Home() {
 
       <ExpandableCardDemo />
 
+<br/>
+<br/>
+
+
+
+<h2 className="text-3xl md:text-4xl font-bold text-center text-white my-8">
+  New in Tech
+</h2>
+
+
+
+      <TechArticlesGrid />
+
+
+
       <br />
       <br />
 
-      <div className="flex justify-center">
-        <h2 className="text-white text-xl sm:text-5xl md:text-6xl font-bold tracking-wide animate-fade-up text-center">
-          What Tech Stack I Work With
-        </h2>
-      </div>
+      
 
       <SkillsSection />
     </>
