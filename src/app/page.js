@@ -1,49 +1,67 @@
-import BackgroundBeamsWithCollision from "@/components/BackgroundEffect";
 import Image from "next/image";
 import profilePic from "../../public/profile2.jpg"; // Ensure the image is inside the `public` folder
-import {ProjectCarousel} from "@/components/ProjectCarousel";
+import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { CoverDemo } from "@/components/ProjectHead";
 import ExpandableCardDemo from "@/components/expandable-card-demo-standard";
+import { SkillsSection } from "@/components/skills";
+import { FlipWords } from "@/components/ui/flip-words";
+import { FloatingDockDemo } from "@/components/TopTab";
+
+const words = ["scalable", "intuitive", "cutting-edge", "AI-driven"];
 
 export default function Home() {
   return (
     <>
-    <div className="relative h-screen w-full overflow-hidden bg-black">
-      <BackgroundBeamsWithCollision />
-      <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-center text-white px-6">
-        
-        {/* Left - Text Content */}
-        <div className="text-center md:text-left md:w-1/2">
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 text-transparent bg-clip-text pb-3">
-            Adarsh Singh
-          </h1>
-          <p className="mt-4 text-lg md:text-xl text-gray-300 opacity-80">
-            Building cool stuff with Next.js, Aceternity UI & Tailwind CSS
-          </p>
-        </div>
+      {/* Hero Section */}
+      <div className="absolute top-5 right-20 z-50">
+    <FloatingDockDemo />
+  </div>
 
-        {/* Right - Profile Picture */}
-        <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center">
-          <Image 
-            src={profilePic} 
-            alt="Adarsh Singh" 
-            width={250} // Adjust size as needed
-            height={250} 
-            className="rounded-full border-4 border-white-500 shadow-lg"
-          />
-        </div>
-        
+  <div className="relative h-screen w-full overflow-hidden bg-black flex flex-col md:flex-row items-center justify-center px-6">
+  {/* Left - FlipWords Section */}
+  <div className="text-center md:text-left md:w-[55%] ml-5"> {/* Increased width & margin */}
+    <div className="h-[40rem] flex justify-center md:justify-start items-center px-4">
+      <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+        Hey, I'm{" "}
+        <span className="font-bold text-white">Adarsh Singh</span>. <br />
+        I build <FlipWords words={words} /> solutions that make an impact.
       </div>
     </div>
+  </div>
 
-<CoverDemo/>
+  {/* Right - Profile Picture */}
+  <div className="mr-12 md:mt-0 md:w-[45%] flex justify-end"> 
+ {/* Adjusted width & alignment */}
+    <Image
+      src={profilePic}
+      alt="Adarsh Singh"
+      width={250}
+      height={250}
+      className="rounded-full border-4 border-white shadow-lg"
+    />
+  </div>
+</div>
 
-    
-    <div className="mt-10 w-full flex justify-center">
-          <ProjectCarousel />
-        </div>
 
-        <ExpandableCardDemo />
+      {/* Other Sections */}
+      <CoverDemo />
+
+      <div className="mt-10 w-full flex justify-center">
+        <ProjectCarousel />
+      </div>
+
+      <ExpandableCardDemo />
+
+      <br />
+      <br />
+
+      <div className="flex justify-center">
+        <h2 className="text-white text-xl sm:text-5xl md:text-6xl font-bold tracking-wide animate-fade-up text-center">
+          What Tech Stack I Work With
+        </h2>
+      </div>
+
+      <SkillsSection />
     </>
   );
 }
