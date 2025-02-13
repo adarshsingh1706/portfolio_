@@ -18,14 +18,14 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://github.com/your-github",
+      href: "https://github.com/adarshsingh1706",
     },
     {
       title: "X (Twitter)",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/your-twitter",
+      href: "https://x.com/Adarsh__tech",
     },
     {
       title: "LeetCode",
@@ -37,14 +37,14 @@ export function FloatingDockDemo() {
           alt="LeetCode Logo"
         />
       ),
-      href: "https://leetcode.com/your-leetcode",
+      href: "https://leetcode.com/u/Adarsh0617/",
     },
     {
       title: "LinkedIn",
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://linkedin.com/in/your-linkedin",
+      href: "https://www.linkedin.com/in/adarsh-singh-742ab9248/",
     },
     {
       title: "Instagram",
@@ -58,7 +58,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconPhoneCall className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "tel:+1234567890", // Replace with your phone number
+      href: "+91 8817847399", // Replace with your phone number
     },
   ];
 
