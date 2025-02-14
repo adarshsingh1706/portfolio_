@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../../public/profile2.jpg"; // Ensure the image is inside the `public` folder
+import profilePic from "../../public/profile2.jpg";
 import { ProjectCarousel } from "@/components/ProjectCarousel";
 import { CoverDemo } from "@/components/ProjectHead";
 import ExpandableCardDemo from "@/components/expandable-card-demo-standard";
@@ -8,6 +8,10 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { FloatingDockDemo } from "@/components/TopTab";
 import { TechArticlesGrid } from "@/components/Articles";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import LampDemo from "@/components/ui/lamp";
+
+
+
 
 const words = ["scalable", "intuitive", "cutting-edge", "AI-driven"];
 
@@ -15,6 +19,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
+      //links nav
       <div className="absolute top-5 right-20 z-50">
         <FloatingDockDemo />
       </div>
@@ -23,7 +28,7 @@ export default function Home() {
         {/* Left - FlipWords Section */}
         <div className="text-center md:text-left md:w-[55%] ml-5">
           {" "}
-          {/* Increased width & margin */}
+      
           <div className="h-[40rem] flex justify-center md:justify-start items-center px-4">
             <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
               Hey, I'm{" "}
@@ -35,7 +40,7 @@ export default function Home() {
 
         {/* Right - Profile Picture */}
         <div className="mr-12 md:mt-0 md:w-[45%] flex justify-end">
-          {/* Adjusted width & alignment */}
+          
           <Image
             src={profilePic}
             alt="Adarsh Singh"
@@ -46,14 +51,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Other Sections */}
+      //projects heading ani
       <CoverDemo />
 
       <div className="mt-10 w-full flex justify-center">
         <ProjectCarousel />
       </div>
-
-      
 
       <br />
       <br />
@@ -72,8 +75,11 @@ export default function Home() {
       </h2>
       <ExpandableCardDemo />
 
+      <LampDemo/>
 
       <SkillsSection />
+
+    
 
       <InfiniteMovingCards
         items={[
