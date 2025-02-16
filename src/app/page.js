@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      //links nav
+      
       <div className="absolute top-5 right-20 z-50">
         <FloatingDockDemo />
       </div>
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      //projects heading ani
+      
       <CoverDemo />
 
       <div className="mt-10 w-full flex justify-center">
@@ -75,10 +75,15 @@ export default function Home() {
       </h2>
       <ExpandableCardDemo />
 
-      <LampDemo/>
+     
 
       <SkillsSection />
 
+
+<br/>
+<br/>
+
+<LampDemo/>
     
 
       <InfiniteMovingCards
