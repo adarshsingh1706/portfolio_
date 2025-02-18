@@ -1,38 +1,55 @@
-import Image from "next/image";
-import Link from "next/link";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+
+const words = [
+  {
+    text: "Park ",
+  },
+  {
+    text: "it ",
+  },
+  {
+    text: "easy ",
+  },
+  {
+    text: "with ",
+  },
+  {
+    text: "Parkit.",
+    className: "text-blue-500 dark:text-blue-500",
+  },
+];
 
 export default function ParkItPage() {
   return (
-    <div className="p-10 max-w-4xl mx-auto text-white">
-      <h1 className="text-5xl font-bold bg-gradient-to-r from-green-400 via-yellow-500 to-orange-500 text-transparent bg-clip-text">
-        ParkIt
-      </h1>
-      <p className="mt-4 text-lg">
-        An intelligent parking solution that finds the closest available spot.
-      </p>
-      <Image
-        src="/projects/parkit.png"
-        alt="ParkIt"
-        width={600}
-        height={350}
-        className="rounded-lg mt-4"
-      />
-      <div className="mt-6">
-        <h3 className="text-xl font-semibold">Technologies Used:</h3>
-        <ul className="list-disc pl-6 mt-2">
-          <li>Next.js</li>
-          <li>GoMaps</li>
-          <li>MongoDB</li>
-        </ul>
+    <>
+      <div className="flex flex-col items-center justify-center h-[40rem]  ">
+        <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+          Never let parking bother you again
+        </p>
+        <TypewriterEffectSmooth words={words} />
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+          <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+            <a
+              href="https://parkit-mu.vercel.app/"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm flex items-center justify-center"
+            >
+              Link
+            </a>
+          </button>
+          <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm ">
+            <a
+              href="https://github.com/AritraBag04/Parkit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-40 h-10 rounded-xl bg-white text-black border border-black text-sm flex items-center justify-center"
+            >
+              Github
+            </a>
+          </button>
+        </div>
       </div>
-      <div className="mt-6 flex gap-4">
-        <Link href="https://parkit.vercel.app" target="_blank" className="px-4 py-2 bg-blue-500 text-white rounded-lg">
-          Live Demo
-        </Link>
-        <Link href="https://github.com/your-repo/parkit" target="_blank" className="px-4 py-2 bg-gray-700 text-white rounded-lg">
-          GitHub
-        </Link>
-      </div>
-    </div>
+    </>
   );
 }
