@@ -29,12 +29,11 @@ const SkeletonOne = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        House in the woods
+      Parking: Always a Hassle, Never a Spot
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+      Parking is a major issue due to limited availability, high costs, and increased traffic congestion. Finding a spot can be frustrating, especially in busy areas where demand exceeds supply.
       </p>
     </div>
   );
@@ -44,13 +43,11 @@ const SkeletonTwo = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        House above the clouds
+      Solving Parking, One Spot at a Time!
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+      Finding a parking spot can be a nightmare, but Parkit makes it easier by providing real-time availability and seamless booking. 
       </p>
     </div>
   );
@@ -59,12 +56,13 @@ const SkeletonThree = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Greens all over
+      Smart Parking Assistant
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      Parking doesn’t have to be a frustrating experience. Parkit uses advanced technology to guide you to the nearest available spot, saving time and fuel. Whether in a busy city or a crowded mall, Parkit ensures you park smarter, faster, and stress-free.
+
+
       </p>
     </div>
   );
@@ -73,12 +71,11 @@ const SkeletonFour = () => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">
-        Rivers are serene
+      Razorpay Integration with Parkit
       </p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      We have integrated Razorpay into our Parkit web app, allowing users to make seamless online payments based on parking hours. With multiple payment options like UPI, cards, and net banking, transactions are quick and hassle-free.
       </p>
     </div>
   );
@@ -150,9 +147,9 @@ export default function ParkItPage() {
 
 {/* Layout Grid */}
 
-<p className="text-center text-lg font-medium text-neutral-600 dark:text-neutral-200 mb-6">
-  Click on a card to explore more details!
-</p>
+<div class="text-white text-3xl font-bold bg-black-900 p-6 rounded-lg text-center">
+Tap on a card to explore details!
+</div>
 
       <div className="h-screen py-20 w-full">
       <LayoutGrid cards={cards} />
